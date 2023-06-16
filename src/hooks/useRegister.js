@@ -9,7 +9,7 @@ const useRegister = () => {
 
   const registerUser = async (data) => {
     try {
-      const response = await API.post(`/user/register/`, {
+      const response = await API.post(`/api/auth/login`, {
         emailAddress: data?.email,
         firstName: data?.name && data.name.split(" ")?.[0],
         lastName: data?.name && data.name.split(" ")?.[1],
