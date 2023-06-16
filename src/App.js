@@ -1,6 +1,8 @@
+
 import { Box } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
+import StudentDashboard from "./pages/StudentDashboard";
 
 function App() {
   return (
@@ -9,9 +11,10 @@ function App() {
       <Routes>
         {/* <Route path="/signup" element={<Signup />} /> */}
         <Route path="/login" element={<Login />} />
+        <Route path='/dashboard' element={<StudentDashboard/>}/>
       </Routes>
     </Box>
-  );
-}
+
+  )}
 
 export default App;
