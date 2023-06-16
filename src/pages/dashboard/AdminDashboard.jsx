@@ -162,14 +162,12 @@ export default function AdminDashboard() {
               >
                 {activeSectionName}
               </Typography>
-            </Box>
-            {/* <Button color="inherit">Logout</Button> */}
+            </Box>  
           </Toolbar>
         </AppBar>
 
         <Drawer variant="permanent" open={open}>
           <DrawerHeader>
-            {/* TODO: change the color of the text */}
             <Typography
               onClick={() => navigate("/")}
               fontSize="1.2rem"
@@ -181,7 +179,7 @@ export default function AdminDashboard() {
                 },
               }}
             >
-              FileImg
+              Atendees
             </Typography>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "rtl" ? (
