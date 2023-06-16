@@ -1,7 +1,8 @@
-<<<<<<< Updated upstream
+
 import { Box } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
+import StudentDashboard from "./pages/StudentDashboard";
 
 function App() {
   return (
@@ -10,22 +11,10 @@ function App() {
       <Routes>
         {/* <Route path="/signup" element={<Signup />} /> */}
         <Route path="/login" element={<Login />} />
+        <Route path='/dashboard' element={<StudentDashboard/>}/>
       </Routes>
     </Box>
-=======
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import StudentDashboard from './pages/StudentDashboard';
 
-function App() {
-  return (
-    <div className="App">
-        <Routes>
-          <Route path='/dashboard' element={<StudentDashboard/>}/>
-        </Routes>
-    </div>
->>>>>>> Stashed changes
-  );
-}
+  )}
 
 export default App;
