@@ -17,7 +17,7 @@ import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ["Books", "Contact"];
+const navItems = ["Dashboard"];
 
 const Navbar = (props) => {
   const handleLogout = () => {
@@ -28,11 +28,8 @@ const Navbar = (props) => {
 
   const handleNavLinkClick = (item) => {
     switch (item) {
-      case "Books":
-        navigate("/books");
-        break;
-      case "Contact":
-        navigate("/contact");
+      case "Dashboard":
+        navigate("/dashboard");
         break;
       default:
         break;
@@ -46,10 +43,6 @@ const Navbar = (props) => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const navigate = useNavigate();
-
-  const handleSignupClick = () => {
-    navigate("/signup");
-  };
 
   const handleLoginClick = () => {
     navigate("/login");
@@ -65,7 +58,7 @@ const Navbar = (props) => {
       sx={{ textAlign: "center", bgcolor: "#fff" }}
     >
       <Typography variant="h6" sx={{ my: 2, fontWeight: 600 }}>
-        BOOKLY
+        Atendees
       </Typography>
       <Divider />
       <List>
@@ -124,7 +117,7 @@ const Navbar = (props) => {
             }}
             onClick={handleHomeClick}
           >
-            BOOKLY
+            Atendees
           </Typography>
 
           <Box
@@ -151,9 +144,9 @@ const Navbar = (props) => {
                   >
                     Login
                   </Button>
-                  <Button variant="contained" onClick={handleSignupClick}>
+                  {/* <Button variant="contained" onClick={handleSignupClick}>
                     Signup
-                  </Button>
+                  </Button> */}
                 </>
               ) : (
                 <>

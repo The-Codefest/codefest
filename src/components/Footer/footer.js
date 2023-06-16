@@ -26,7 +26,7 @@ export const Footer = () => {
     >
       <Stack spacing={1}>
         <Typography fontWeight={600} fontSize={20} sx={{ color: "#54565A" }}>
-          Your Online Library To Grow Your Knowledge
+          Atendance Made Easy
         </Typography>
         <Box
           sx={{
@@ -36,11 +36,11 @@ export const Footer = () => {
           }}
         >
           <CopyrightIcon />
-          2022 BOOKLY - Group4
+          2022 Atendees
         </Box>
       </Stack>
       <Typography fontWeight="800" sx={{ color: "#000" }}>
-        BOOKLY
+        Atendees
       </Typography>
     </Box>
   );

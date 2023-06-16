@@ -1,4 +1,4 @@
-// dummy data
+import storage from "redux-persist/lib/storage";
 import {
   persistReducer,
   FLUSH,
@@ -17,6 +17,18 @@ import { reportApi } from "store/services/reportApi";
 import imageSlice from "store/features/imageSlice";
 import alertSlice from "store/features/alertSlice";
 
+const imagePersistConfig = {
+  key: "image",
+  storage,
+};
+
+// const imageSearchAPIPersistConfig = {
+//   key: "imageSearchAPI",
+//   storage,
+//   stateReconciler: (inboundState, originalState, reducedState) => {
+//     return { ...reducedState };
+//   },
+// };
 
 export const store = configureStore({
   reducer: {

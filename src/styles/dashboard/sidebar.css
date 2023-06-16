@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.app .content {
+  margin-left: 6em;
+  height: 100%;
+  /* width: 100%; */
+}
+body {
+  background-color: #f2f2f2;
+  font-family: Lato, sans-serif;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #ffffff;
+  width: 60px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  z-index: 151515000000000;
+}
+.logo {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 10px 0 0 10px;
+  color: #fff;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding-top: 35px !important;
+  padding-left: 3px !important;
+}
+
+.text1 {
+  font-weight: bold;
+  padding-top: 12px;
+}
+
+.text {
+  font-weight: bold;
+  padding-top: 12px;
+  padding-left: 30px;
+}
+
+.item {
+  position: relative;
+  color: #1d3557;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+.navicon {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 7px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.navitem {
+  position: relative;
+  margin-left: 10px;
+}
+
+.nav:hover {
+  width: 280px;
+  transition: all 0.5s ease;
+}
+
+.MuiBox-root css-1xn3edc {
+  margin: 0 !important;
+}
