@@ -3,19 +3,25 @@ import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Checkbox, Form, Input, Typography } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import { APIS } from "../../utils/services";
+import axios from "axios";
 
-const LoginFileads = () => {  
+const LoginFileads = () => {
   const navigate = useNavigate();
-  
+
   const onFinish = async (values) => {
     console.log("Received values of form: ", values);
     try {
       const userData = {
         email: values.email,
         password: values.password,
+        userTypeL: "1",
       };
+      console.log("userData: ", userData);
 
-      const response = await APIS.post("/sign_in", userData);
+      const response = await axios.post(
+        "http://192.168.43.45/api/auth/login",
+        userData
+      );
       console.log(response);
       console.log(response.data);
       if (response?.status === 200) {
